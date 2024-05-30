@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Hero() {
+function Car_insurance(){
   return (
     <div class='w-fill relative'>
     <img class='absolute inset-0 w-full h-full object-cover' src="./assets/images/car-banner_white.jpg" alt="" />
@@ -10,7 +10,8 @@ function Hero() {
         <button class='mx-auto px-4 py-2 sm:px-6 sm:py-3 text-white text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl hover:px-5 md:hover:px-7 hover:py-3 border rounded-sm border-none max-w-fit bg-[#2c2c2c]'>GET A QUOTE</button>
     </div>
 </div>
+
   )
 }
 
-export default Hero
+export default Car_insurance
