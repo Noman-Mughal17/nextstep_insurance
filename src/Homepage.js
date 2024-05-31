@@ -31,14 +31,16 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className='grid md:grid-cols-12 gap-3 mt-4 px-4 md:px-16'>
-                    <div className='md:col-span-4 py-4'>
-                        <img src="./assets/images/home_3.jpg" alt="" className='relative inset-0 w-full h-full' />
-                        <div className='absolute flex flex-col align-middle justify-startr space-y-4'>
-                            <h1 className='font-bold text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl'>Business INSURANCE</h1>
-                            <div className='flex justify-start align-middle space-x-4'>
-                                <button className='text-white bg-black border border-none rounded-md hover:rounded-xl hover:shadow-slate-700 shadow-lg py-2 px-6 w-fit'>MORE</button>
-                                <button className='text-white bg-red-600 border border-none rounded-lg hover:rounded-xl hover:shadow-slate-700 shadow-lg py-2 px-6 w-fit'>QUOTE</button>
+                <div className='grid md:grid-cols-12 gap-3 mt-4 px-4 md:px-20'>
+                    <div className='relative md:col-span-4 py-4 h-full'>
+                        <img src="./assets/images/home_3.jpg" alt="" className='relative inset-0 w-full h-[65vh] md:h-full' />
+                        <div className='absolute inset-0 flex flex-col justify-center align-middle'>
+                            <div className='ps-4 md:ps-2 lg:ps-4 flex flex-col align-middle justify-start space-y-4'>
+                                <h1 className='font-bold text-black text-xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-4xl'>Business <br /> INSURANCE</h1>
+                                <div className='flex justify-start align-middle space-x-4 md:space-x-2'>
+                                    <button className='text-white bg-black border border-none rounded-md hover:rounded-xl hover:shadow-slate-700 shadow-lg py-2 px-6 md:px-3 lg:px-6 w-fit'>MORE</button>
+                                    <button className='text-white bg-red-600 border border-none rounded-lg hover:rounded-xl hover:shadow-slate-700 shadow-lg py-2 px-6 md:px-3 lg:px-6 w-fit'>QUOTE</button>
+                                </div>
                             </div>
                         </div>
                     </div>

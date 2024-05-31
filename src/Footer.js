@@ -36,6 +36,14 @@ function Footer() {
             <a className='text-lg' href="">Follow Us on Instagram</a>
         </div>
     </div>
+    <div className='flex flex-col md:flex-row align-middle justify-center bg-[#54595f] w-full text-center py-4'>
+        <div className='mx-auto  text-red-600'>
+            <h1 className='text-xl'>Copyright © 2024 Next Step Insurance</h1>
+        </div>
+        <div className='mx-auto  text-blue-700'>
+            <h1 className='text-xl'><a href="https://truthmarketings.com/">Powered by Truth Marketings</a></h1>
+        </div>
+    </div>
     </>
   )
 }
