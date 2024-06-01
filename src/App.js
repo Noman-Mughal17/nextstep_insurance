@@ -10,6 +10,7 @@ import Homeinsurance from "./Homeinsurance.js";
 import Businessinsurance from "./Business.js";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Homepage.js';
+import Formpage from "./Form.js"
 function App() {
   // const router=createBrowserRouter([
   //   {path:'/',element:<Home/>},
@@ -30,9 +31,10 @@ function App() {
       <Route path="/carinsurance" element={<Carinsurance />} />
       <Route path="/vaninsurance" element={<Vaninsurance />} />
       <Route path="/motortrade" element={<Motorinsurance/>} />
-      <Route path="/accidentmanagmente" element={<Accidentinsurance/>} />
-      <Route path="/businessinsurance" element={<Homeinsurance/>} />
-      <Route path="/homeinsurance" element={<Businessinsurance/>} />
+      <Route path="/accidentmanagment" element={<Accidentinsurance/>} />
+      <Route path="/businessinsurance" element={<Businessinsurance/>} />
+      <Route path="/homeinsurance" element={<Homeinsurance/>} />
+      <Route path="/form" element={<Formpage/>}/>
     </Routes>
     </BrowserRouter>
     <Footer/>

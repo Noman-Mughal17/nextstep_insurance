@@ -8,14 +8,16 @@ function Home() {
                         <h1 className='font-bold text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl'>CAR INSURANCE</h1>
                         <img src="./assets/images/home_1.jpg" alt="" className='w-auto' />
                         <div className='flex justify-center align-middle space-x-4'>
-                            <button className='text-white bg-black border border-none rounded-md hover:rounded-xl hover:shadow-slate-700 shadow-lg py-2 px-6 w-fit'>MORE</button>
-                            <button className='text-white bg-red-600 border border-none rounded-lg hover:rounded-xl hover:shadow-slate-700 shadow-lg py-2 px-6 w-fit'>QUOTE</button>
+                            <a href="/carinsurance"><button className='text-white bg-black border border-none rounded-md hover:rounded-xl hover:shadow-slate-700 shadow-lg py-2 px-6 w-fit'>MORE</button></a>
+                           <a href="/form">
+                           <button className='text-white bg-red-600 border border-none rounded-lg hover:rounded-xl hover:shadow-slate-700 shadow-lg py-2 px-6 w-fit'>QUOTE</button>
+                           </a>
                         </div>
                     </div>
                 </div>
-                <div className='md:col-span-1 lg:col-span-1 xl:col-span-1 col-span-3 bg-red-600 text-center'>
+                <div className='flex items-center justify-center flex-col px-3 py-3 md:col-span-1 lg:col-span-1 xl:col-span-1 col-span-3 bg-red-600 text-center'>
                     <h1 className='text-xl sm:text-xl md:text-3xl lg:text-4xl xl:text-4xl text-white font-bold '>MOTOR TRADE</h1>
-                    <p className='text-white'>We compare beyond the comparison websites and we also provide beyond the providers!</p>
+                    <p className='text-white '>We compare beyond the comparison websites and we also provide beyond the providers!</p>
                 </div>
             </div>
             <div>
@@ -25,8 +27,10 @@ function Home() {
                         <div class='relative z-10 flex align-middle justify-center text-center flex-col p-5 space-y-24 bg-opacity-80'>
                             <h1 className=' text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl text-black font-bold'>HOME INSURANCE</h1>
                             <div className='flex justify-center align-middle space-x-4'>
-                                <button className='text-white bg-black border border-none rounded-md hover:rounded-xl hover:shadow-slate-700 shadow-lg py-2 px-6 w-fit'>MORE</button>
+                               <a href="/homeinsurance"> <button className='text-white bg-black border border-none rounded-md hover:rounded-xl hover:shadow-slate-700 shadow-lg py-2 px-6 w-fit'>MORE</button></a>
+                                <a href="/form">
                                 <button className='text-white bg-red-600 border border-none rounded-lg hover:rounded-xl hover:shadow-slate-700 shadow-lg py-2 px-6 w-fit'>QUOTE</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -38,8 +42,10 @@ function Home() {
                             <div className='ps-4 md:ps-2 lg:ps-4 flex flex-col align-middle justify-start space-y-4'>
                                 <h1 className='font-bold text-black text-xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-4xl'>Business <br /> INSURANCE</h1>
                                 <div className='flex justify-start align-middle space-x-4 md:space-x-2'>
-                                    <button className='text-white bg-black border border-none rounded-md hover:rounded-xl hover:shadow-slate-700 shadow-lg py-2 px-6 md:px-3 lg:px-6 w-fit'>MORE</button>
-                                    <button className='text-white bg-red-600 border border-none rounded-lg hover:rounded-xl hover:shadow-slate-700 shadow-lg py-2 px-6 md:px-3 lg:px-6 w-fit'>QUOTE</button>
+                                  <a href="/businessinsurance">  <button className='text-white bg-black border border-none rounded-md hover:rounded-xl hover:shadow-slate-700 shadow-lg py-2 px-6 md:px-3 lg:px-6 w-fit'>MORE</button></a>
+                                   <a href="/form">
+                                   <button className='text-white bg-red-600 border border-none rounded-lg hover:rounded-xl hover:shadow-slate-700 shadow-lg py-2 px-6 md:px-3 lg:px-6 w-fit'>QUOTE</button>
+                                   </a>
                                 </div>
                             </div>
                         </div>
@@ -48,8 +54,10 @@ function Home() {
                         <h1 className='font-bold text-black text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-4xl'>VAN INSURANCE</h1>
                         <img src="./assets/images/home_4.jpg" alt="" className='inset-0 w-full h-auto object-cover' />
                         <div className='flex justify-center mt-3 align-middle space-x-4'>
-                            <button className='text-white bg-black border border-none rounded-md hover:rounded-xl hover:shadow-slate-700 shadow-lg py-2 px-6 w-fit'>MORE</button>
+                            <a href="/vaninsurance"><button className='text-white bg-black border border-none rounded-md hover:rounded-xl hover:shadow-slate-700 shadow-lg py-2 px-6 w-fit'>MORE</button></a>
+                            <a href="/form">
                             <button className='text-white bg-red-600 border border-none rounded-lg hover:rounded-xl hover:shadow-slate-700 shadow-lg py-2 px-6 w-fit'>QUOTE</button>
+                            </a>
                         </div>
                     </div>
                 </div>

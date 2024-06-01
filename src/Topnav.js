@@ -4,9 +4,9 @@ function Topnav() {
   return (
     <div className='flex flex-col py-5 xl:space-y-0 lg:flex-row space-y-4 align justify-center mx-auto w-full h-auto'>
       <div className='md:w-full lg:w-60 xl:w-60 m-auto md:ps-0 lg:ps-6 xl:ps-0'>
-      <img className='mx-auto' src="./assets/images/navlogo.png" alt="" />
+        <a href="/"><img className='mx-auto' src="./assets/images/navlogo.png" alt="" /></a>
       </div>
-      <div className='flex flex-row justify-center align-middle space-x-8'>
+      <div className='flex flex-row justify-center align-middle space-x-8 px-2 md:px-1 lg:px-0'>
       <div className='flex justify-center align-middle space-x-6'>
         <img src="./assets/images/location.svg" alt="" className='w-7 md:w-9 sm:w-8 lg:w-10 xl:w-10' />
       <div className='flex flex-col align-middle justify-center text-start'> 

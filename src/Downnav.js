@@ -1,13 +1,12 @@
 'use client'
 
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 
 
 const Downnav = () => {
   const [btnActive, setBtnActive] = useState('');
-  const btndata = [{name:'CAR INSURANCE',path:'/carinsurance'}, {name:'VAN INSURANCE',path:'/vaninsurance'},{name:'MOTOR TRADE',path:'/motortrade'}, {name:'ACCIDENT MANAGEMENT',path:'/accidentmanagmente'},{name:'HOME INSURANCE',path:'/homeinsurance'}, {name:'BUSINESS INSURANCE',path:'/businessinsurance'}];
+  const btndata = [{name:'CAR INSURANCE',path:'/carinsurance'}, {name:'VAN INSURANCE',path:'/vaninsurance'},{name:'MOTOR TRADE',path:'/motortrade'}, {name:'ACCIDENT MANAGEMENT',path:'/accidentmanagment'},{name:'HOME INSURANCE',path:'/homeinsurance'}, {name:'BUSINESS INSURANCE',path:'/businessinsurance'}];
 
   const checkActive = (index) => {
   
