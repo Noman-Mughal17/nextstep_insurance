@@ -1,4 +1,5 @@
 "use client"
+import { isDisabled } from '@testing-library/user-event/dist/utils'
 import React, { useState } from 'react'
 
 function Form() {
@@ -22,10 +23,16 @@ function Form() {
         p_number:"",
         m_number:"",
     })
+const [check_state,setcheck_state]=useState('')
+   const check_states=(e)=>{
+    setcheck_state(e.target.checked)
+}
+console.log(check_state)
     const changehandler=(e)=>{
         let name =e.target.name
         let value =e.target.value
         setformdat({...formdata,[name]:value})
+        console.log(formdata)
     }
     const submitdata=()=>{
         console.log(formdata)
@@ -50,9 +57,10 @@ function Form() {
                 <div className='flex flex-col'>
                     <label htmlFor="" className='font-bold'>If by a friend, family or referrer please state their name</label>
                     <div className='flex space-x-3'>
-                        <input type="text" onChange={changehandler} name='reference' className='outline-none border rounded-md border-blue-500  px-3 py-3 w-1/2' />
+                        {check_state==true?(
+                        <input type="text" disabled={true} onChange={changehandler} name='reference' className='outline-none border rounded-md border-blue-500  px-3 py-3 w-1/2' />):(<input type="text" onChange={changehandler} name='reference' className='outline-none border rounded-md border-blue-500  px-3 py-3 w-1/2' />)}
                         <div className='flex items-center space-x-2 justify-center'>
-                            <input type="checkbox" />
+                            <input type="checkbox" name='chek_box'  onChange={check_states} />
                             <label htmlFor="">or no Recommendation</label>
                         </div>
                     </div>
