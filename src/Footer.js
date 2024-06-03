@@ -10,16 +10,16 @@ function Footer() {
             <a className='text-lg' href="/carinsurance">ABOUT US</a>
             <a className='text-lg' href="">TERMS AND CONDITIONS</a>
             <a className='text-lg' href="">PRIVICY POLICY</a>
-            <a className='text-lg' href="">CONTACT US</a>
+            <a className='text-lg' href="/contactform">CONTACT US</a>
         </div>
         <div className='flex flex-col text-left space-y-1 p-4'>
             <h1 className='text-xl font-bold py-4'>QUOTATION FORM</h1>
-            <a className='text-lg' href="">Car Insurance</a>
-            <a className='text-lg' href="">Van Insurance</a>
-            <a className='text-lg' href="">Motor Trade</a>
-            <a className='text-lg' href="">Accident Managment</a>
-            <a className='text-lg' href="">Home Insurance</a>
-            <a className='text-lg' href="">Business Insurance</a>
+            <a className='text-lg' href="/form">Car Insurance</a>
+            <a className='text-lg' href="/form">Van Insurance</a>
+            <a className='text-lg' href="/form">Motor Trade</a>
+            <a className='text-lg' href="/form">Accident Managment</a>
+            <a className='text-lg' href="/form">Home Insurance</a>
+            <a className='text-lg' href="/form">Business Insurance</a>
         </div>
         <div className='flex flex-col text-left space-y-1 p-4'>
             <h1 className='text-xl font-bold py-4'>SERVICES</h1>

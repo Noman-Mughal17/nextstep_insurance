@@ -11,6 +11,7 @@ import Businessinsurance from "./Business.js";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Homepage.js';
 import Formpage from "./Form.js"
+import Contactform from './Contactform.js';
 function App() {
   // const router=createBrowserRouter([
   //   {path:'/',element:<Home/>},
@@ -35,6 +36,7 @@ function App() {
       <Route path="/businessinsurance" element={<Businessinsurance/>} />
       <Route path="/homeinsurance" element={<Homeinsurance/>} />
       <Route path="/form" element={<Formpage/>}/>
+      <Route path='/contactform' element={<Contactform/>}/>
     </Routes>
     </BrowserRouter>
     <Footer/>
