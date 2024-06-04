@@ -34,7 +34,7 @@ function Contactform() {
                     <p className='text-lg mx-auto'>Email:info@nextstepinsurance.co.uk</p>
                 </div>
                 <form>
-                    <div className='flex items-center justify-center flex-col`'>
+                    <div className='flex items-center justify-center flex-col'>
                     <div className='grid grid-cols-12 gap-4 w-full'>
                     <div className='col-span-12 md:col-span-6 space-y-4'>
                         <div className='flex flex-col'>
