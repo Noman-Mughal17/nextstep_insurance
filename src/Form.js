@@ -22,6 +22,7 @@ function Form() {
         email:"",
         p_number:"",
         m_number:"",
+        agree:""
     })
 const [check_state,setcheck_state]=useState('')
    const check_states=(e)=>{
@@ -35,7 +36,12 @@ console.log(check_state)
         console.log(formdata)
     }
     const submitdata=()=>{
+       if(formdata.agree!==true){
+        alert("Please agree terms and conditions")
+       }
+       else{
         console.log(formdata)
+       }
     }
     return (
         <div className='py-4 px-2 md:px-24'>
@@ -188,7 +194,7 @@ console.log(check_state)
                  </div>
                  <div className='flex items-center space-y-4 justify-center flex-col'>
                  <div className='flex items-center space-x-2 justify-center'>
-                    <input required type="radio" />
+                    <input name='agree'  onChange={changehandler} type="radio" />
                     <p className='text-xl'> I Agree</p>
                  </div>
                  <p className='text-xl px-2 text-center'>By clicking submit, you agree your explicit consent for us to use the data provided in accordance with the Data Protection act 1998, this data will be used to provide the cheapest possible quote while being shared with both offline and online markets.</p>
