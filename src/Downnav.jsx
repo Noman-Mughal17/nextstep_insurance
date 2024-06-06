@@ -13,7 +13,7 @@ const Downnav = () => {
     setBtnActive(index);
     
   };
-  const [navbtn,setnavbtn]=useState(false)
+  const [navbtn,setnavbtn]=useState(true)
 
   return (
     <div className='bg-[#edeef0] py-3 w-full text-black'>
@@ -25,7 +25,7 @@ const Downnav = () => {
           <svg tabindex="0" class="e-font-icon-svg e-far-window-close  w-8 h-8 cursor-pointer" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V86c0-3.3 2.7-6 6-6h404c3.3 0 6 2.7 6 6v340zM356.5 194.6L295.1 256l61.4 61.4c4.6 4.6 4.6 12.1 0 16.8l-22.3 22.3c-4.6 4.6-12.1 4.6-16.8 0L256 295.1l-61.4 61.4c-4.6 4.6-12.1 4.6-16.8 0l-22.3-22.3c-4.6-4.6-4.6-12.1 0-16.8l61.4-61.4-61.4-61.4c-4.6-4.6-4.6-12.1 0-16.8l22.3-22.3c4.6-4.6 12.1-4.6 16.8 0l61.4 61.4 61.4-61.4c4.6-4.6 12.1-4.6 16.8 0l22.3 22.3c4.7 4.6 4.7 12.1 0 16.8z"></path></svg>
           </div>)
           }
-        {!navbtn ?  <div className='w-full flex flex-col justify-start items-start md:hidden'>
+        {navbtn ?  "" :<div className='w-full flex flex-col justify-start items-start md:hidden'>
          {btndata.map((val, index) => (
         <a
         key={index}
@@ -35,19 +35,17 @@ const Downnav = () => {
           >
           {val.name}
           </a>
-         
-
       ))}
-      </div> :""}
+      </div>}
         </div>
         }
-      <div className='flex max-md:hidden md:flex-row align-middle justify-center'>
+      <div className='flex max-md:hidden md:flex-row align-middle justify-evenly'>
       {btndata.map((val, index) => (
         <a
         key={index}
         href={val.path}
           onClick={()=>checkActive(index)}
-          className={`border rounded-sm px-6 py-2 md:py-7 border-none text-lg ${btnActive === index ? 'bg-[#d2050d] text-white' : 'hover:bg-[#d2050d] hover:text-white'}`}
+          className={`border rounded-sm px-4 lg:px-10 py-2 md:py-5 border-none text-lg ${btnActive === index ? 'bg-[#d2050d] text-white' : 'hover:bg-[#d2050d] hover:text-white'}`}
           >
           {val.name}
           </a>

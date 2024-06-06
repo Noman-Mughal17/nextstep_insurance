@@ -39,30 +39,30 @@ function Contactform() {
                     <div className='col-span-12 md:col-span-6 space-y-4'>
                         <div className='flex flex-col'>
                             <label htmlFor="" className='font-bold'>First Name<span className='mx-2 text-red-600'>*</span></label>
-                            <input required type="text" onChange={changehandler} name='f_name' className='outline-none border rounded-md border-blue-500  px-3 py-3 w-full outline-1' aria-required />
+                            <input required type="text" onChange={changehandler} name='f_name' className='outline-none border rounded-md  hover:border-blue-500 hover:shadow-blue-400 shadow-sm  px-3 py-3 w-full outline-1' aria-required />
                         </div>                    </div>
                     <div className='col-span-12 md:col-span-6 space-y-4'>
                         <div className='flex flex-col'>
                             <label htmlFor="" className='font-bold'>Last Name<span className='mx-2 text-red-600'>*</span></label>
-                            <input onChange={changehandler} name='l_name' type="text" className='outline-none border rounded-md border-blue-500  px-3 py-3 w-full outline-1' />
+                            <input onChange={changehandler} name='l_name' type="text" className='outline-none border rounded-md  hover:border-blue-500 hover:shadow-blue-400 shadow-sm  px-3 py-3 w-full outline-1' />
                         </div>
                     </div>
                     <div className='col-span-12 space-y-4'>
                         <div className='flex flex-col'>
                             <label htmlFor="" className='font-bold'>Email<span className='mx-2 text-red-600'>*</span></label>
-                            <input required="required" type="text" onChange={changehandler} name='email' className='outline-none border rounded-md border-blue-500  px-3 py-3 w-full outline-1' aria-required/>
+                            <input required="required" type="text" onChange={changehandler} name='email' className='outline-none border rounded-md hover:border-blue-500 hover:shadow-blue-400 shadow-sm px-3 py-3 w-full outline-1' aria-required/>
                         </div>
                         <div className='flex flex-col'>
                             <label htmlFor="" className='font-bold'>Phone Number</label>
-                            <input required="required"  type="number" onChange={changehandler} name='number' placeholder='Please Select' className='outline-none border rounded-md border-blue-500  px-3 py-3 w-full outline-1' />
+                            <input required="required"  type="number" onChange={changehandler} name='number' placeholder='Please Select' className='outline-none border rounded-md hover:border-blue-500 hover:shadow-blue-400 shadow-sm  px-3 py-3 w-full outline-1' />
                         </div>
                         <div className='flex flex-col'>
                             <label htmlFor="" className='font-bold'>Your Message<span className='mx-2 text-red-600'>*</span></label>
-                            <textarea required="required"  type="text" onChange={changehandler} name='text'  className='outline-none border rounded-md border-blue-500  px-3 py-3 w-full outline-1' aria-required/>
+                            <textarea required="required"  type="text" onChange={changehandler} name='text'  className='outline-none border rounded-md hover:border-blue-500 hover:shadow-blue-400 shadow-sm px-3 py-3 w-full outline-1' aria-required/>
                         </div>
                     </div>
                 </div>
-                <button className='px-5 py-3 mt-4 hover:bg-blue-400 bg-blue-500 w-fit text-xl font-bold border rounded-lg text-white mx-auto' type='submit' onClick={submitdata}>Submit Information</button>
+                <button className='px-5 py-3 mt-4 mx-auto sm:px-6 sm:py-3 text-white text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl hover:shadow-gray-600 shadow-lg border rounded-md border-none max-w-fit bg-red-600' type='submit' onClick={submitdata}>Submit Information</button>
                     </div>
                 </form>
             </div>

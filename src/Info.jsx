@@ -16,11 +16,11 @@ function Info() {
             </div>
             <div className='lg:col-span-3 bg-[#edeef0]'>
                 <div>
-                    <h1 className='px-4 text-2xl text-white font-bold py-4 bg-red-600'>GET IN TOUCH</h1>
-                    <p className='p-5 text-center text-2xl'>Contact us now on NEXTSTEP Landline 0151-5282858</p>
+                    <h1 className='px-4 text-center text-2xl text-white font-bold py-4 bg-red-600'>GET IN TOUCH</h1>
+                    <p className='p-5 text-center text-2xl'>Contact us now on <span className='font-bold'>NEXTSTEP </span>Landline 0151-5282858</p>
                 </div>
                 <div>
-                    <h1 className='px-4 text-2xl text-white font-bold py-4 bg-red-600'>GET IN TOUCH</h1>
+                    <h1 className='px-4 text-center text-2xl text-white font-bold py-4 bg-red-600'>GET IN TOUCH</h1>
                     <p className='p-5 text-center my-auto text-lg'>Head OfficeWrite to us or send us all forms and correspondence to quote</p>
                     <p className='p-5 text-center my-auto text-lg'>350 UpperParliment street Liverpool L8 7QL, United Kingdom</p>
                 </div>
@@ -30,34 +30,34 @@ function Info() {
               <h1 className='text-3xl font-bold'>How you will benifited?</h1>
                 <div className='grid lg:grid-cols-12 gap-4 w-full'>
                     <div className='lg:col-span-6'>
-                        <div className='flex items-center justify-between px-4  bg-[#d0040c]'>
+                        <div className='flex items-center justify-between px-4 shadow-inner shadow-red-700 bg-[#d0040c]'>
                         <h1 className='text-xl text-white text-center font-bold py-3'>VAN INSURANCE</h1>
                         <button onClick={(()=>{if(show !=1){setShow(1)}else{setShow(0)}})} className='text-3xl text-white font-bold'>+</button>
                         </div>
                         {show ==1 ?<p className='p-5 text-center my-auto text-lg shadow-lg shadow-slate-500'>We can find the perfect policy for your van, whether it’s a delivery van or your company loading van, getting the right cover to make sure your worklife or businesses are always running smoothly is our priority. Be sure to mention any alterations or modifications you may have made to your vehicle to make sure we can give you the perfect choice.</p> :""}
-                        <div className='flex items-center justify-between px-4 bg-[#d0040c]'>
+                        <div className='flex items-center justify-between px-4 shadow-inner shadow-red-700 bg-[#d0040c]'>
                         <h1 className='text-xl text-white text-center font-bold py-3'>TRAVEL INSURANCE</h1>
                         <button onClick={(()=>{if(show!=2){setShow(2)}else{setShow(0)}})} className='text-3xl text-white font-bold'>+</button>
                         </div>
                        {show ==2 ?<p className='p-5 text-center my-auto text-lg shadow-lg shadow-slate-500'>From sky dives to road trips, you don’t know what you’re going to try next. When being adventurous, wild and having a good time in a different country make sure your covered. With amazing cover policies enquire now..</p>:""}
-                        <div className='flex items-center justify-between px-4 bg-[#d0040c]'>
+                        <div className='flex items-center justify-between px-4 shadow-inner shadow-red-700 bg-[#d0040c]'>
                         <h1 className='text-xl text-white text-center font-bold py-3'>HOME INSURANCE</h1>
                         <button onClick={(()=>{if(show!=3){setShow(3)}else{setShow(0)}})} className='text-3xl text-white font-bold'>+</button>
                         </div>
                         {show==3?<p className='p-5 text-center my-auto text-lg shadow-lg shadow-slate-500'>If your ready to take that big step into becoming a new homeowner or already a Landlord with many properties. Make sure your properties are covered. Enquire now.</p>:""}
                     </div>
                     <div className='lg:col-span-6'>
-                    <div className='flex items-center justify-between px-4 bg-[#d0040c]'>
+                    <div className='flex items-center justify-between px-4 shadow-inner shadow-red-700 bg-[#d0040c]'>
                         <h1 className='text-xl text-white text-center font-bold py-3'>BUSINESS INSURANCE</h1>
                         <button onClick={(()=>{if(show!=4){setShow(4)}else{setShow(0)}})} className='text-3xl text-white font-bold'>+</button>
                         </div>
                         {show==4?<p className='p-5 text-center my-auto text-lg shadow-lg shadow-slate-500'>Different businesses liaise with variety of business policies, whether you’re an independent beauty therapist, or need cover for you taxi cover. Contact us to help you find that perfect policy.</p>:""}
-                        <div className='flex items-center justify-between px-4 bg-[#d0040c]'>
+                        <div className='flex items-center justify-between px-4 shadow-inner shadow-red-700 bg-[#d0040c]'>
                         <h1 className='text-xl text-white text-center font-bold py-3'>LIFE INSURANCE</h1>
                         <button onClick={(()=>{if(show!=5){setShow(5)}else{setShow(0)}})} className='text-3xl text-white font-bold'>+</button>
                         </div>
                         {show==5?<p className='p-5 text-center my-auto text-lg shadow-lg shadow-slate-500'>From sky dives to road trips, you don’t know what you’re going to try next. When being adventurous, wild and having a good time in a different country make sure your covered. With amazing cover policies enquire now.</p>:""}
-                        <div className='flex items-center justify-between px-4 bg-[#d0040c]'>
+                        <div className='flex items-center justify-between px-4 shadow-inner shadow-red-700 bg-[#d0040c]'>
                         <h1 className='text-xl text-white text-center font-bold py-3'>GADGET INSURANCE</h1>
                         <button onClick={(()=>{if(show!=6){setShow(6)}else{setShow(0)}})} className='text-3xl text-white font-bold'>+</button>
                         </div>

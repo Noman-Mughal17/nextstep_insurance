@@ -1,17 +1,17 @@
 import './App.css';
-import Topnav from './Topnav';
-import Downnav from './Downnav.js';
-import Footer from './Footer.js';
-import Carinsurance from "./Carinsurance.js";
-import Vaninsurance from "./Vaninsurance.js";
-import Motorinsurance from "./Motortrade.js";
-import Accidentinsurance from "./Accident.js";
-import Homeinsurance from "./Homeinsurance.js";
-import Businessinsurance from "./Business.js";
+import Topnav from './Topnav.jsx';
+import Downnav from './Downnav.jsx';
+import Footer from './Footer.jsx';
+import Carinsurance from "./Carinsurance.jsx";
+import Vaninsurance from "./Vaninsurance.jsx";
+import Motorinsurance from "./Motortrade.jsx";
+import Accidentinsurance from "./Accident.jsx";
+import Homeinsurance from "./Homeinsurance.jsx";
+import Businessinsurance from "./Business.jsx";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './Homepage.js';
-import Formpage from "./Form.js"
-import Contactform from './Contactform.js';
+import Home from './Homepage.jsx';
+import Formpage from "./Form.jsx"
+import Contactform from './Contactform.jsx';
 function App() {
   // const router=createBrowserRouter([
   //   {path:'/',element:<Home/>},
@@ -23,7 +23,7 @@ function App() {
   //   {path:'/Business-insurance',element:<Businessinsurance/>}
   // ])
   return (
-   <div className='bg-white'>
+   <div className='bg-white font-serif'>
     <Topnav/>
     <Downnav/>
     <BrowserRouter>
