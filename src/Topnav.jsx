@@ -21,9 +21,9 @@ function Topnav() {
         <p className='text-md md:text-lg lg:text-lg'>Monday to Saturday</p>
      </div>
       </div>
-      <div className='flex md:justify-center align-middle md:space-x-6 md:pr-0 lg:pr-6 xl:pr-12 flex-col md:flex-row'>
+      <div className='flex md:justify-center align-middle md:space-x-6 md:pr-0 lg:pr-6 xl:pr-12 flex-col md:flex-row text-center md:text-start'>
         <img src="./assets/images/dailer.svg" alt="" className='mx-auto w-8 md:w-9 sm:w-9 lg:w-10 xl:w-10'/>
-        <h5 className='font-bold text-md md:text-lg lg:text-lg'>0151-5282858</h5>
+        <h5 className='mx-auto my-auto font-bold text-md md:text-lg lg:text-lg'>0151-5282858</h5>
       </div>
       </div>
     </div>

@@ -14,15 +14,15 @@ function Info() {
                 <p className='opacity-80 text-lg'> Any data you supply will only be used for the purposes of dealing with your enquiry. For mutual security, calls may be recorded and monitored for training purposes.</p>
                 <p className='opacity-80 text-lg'> Our service provides the precision and expertise in requiring the right insurance policy for you; we do not act as a broker or agent provider for a specific insurance company but we do initiate all policies suitable for the client. Our service is targeted to save you money through our in-depth and on hands approach, searching deeply through various amounts of insurance providers and websites and usually one that will be suited to your caliber. This process is done manually by our specialists using all accurate details provided by you with an assured trust on your personal information, fully authorized by you. We provide you with a range of websites that can come from direct insurers or comparison websites that is best suited to all the details provided by you. Our company does not sell personal information to third party companies and does not recommend any personal adjustments on circumstances in response to the suitability of a policy or provider.</p>
             </div>
-            <div className='lg:col-span-3 bg-[#edeef0]'>
+            <div className='lg:col-span-3 bg-[#edeef0] '>
                 <div>
                     <h1 className='px-4 text-center text-2xl text-white font-bold py-4 bg-red-600'>GET IN TOUCH</h1>
                     <p className='p-5 text-center text-2xl'>Contact us now on <span className='font-bold'>NEXTSTEP </span>Landline 0151-5282858</p>
                 </div>
                 <div>
                     <h1 className='px-4 text-center text-2xl text-white font-bold py-4 bg-red-600'>GET IN TOUCH</h1>
-                    <p className='p-5 text-center my-auto text-lg'>Head OfficeWrite to us or send us all forms and correspondence to quote</p>
-                    <p className='p-5 text-center my-auto text-lg'>350 UpperParliment street Liverpool L8 7QL, United Kingdom</p>
+                    <p className='p-5 text-center my-auto text-xl'>Head OfficeWrite to us or send us all forms and correspondence to quote</p>
+                    <p className='p-5 text-center my-auto text-xl'>350 UpperParliment street Liverpool L8 7QL, United Kingdom</p>
                 </div>
             </div>
         </div>
