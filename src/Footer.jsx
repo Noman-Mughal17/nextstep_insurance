@@ -38,20 +38,13 @@ function Footer() {
         </div>
         <div className='flex flex-col text-left space-y-1 p-4'>
             <h1 className='text-2xl font-bold py-4 text-red-600'>FOLLOW US</h1>
-            <div className='flex md:flex-col items-center justify-evenly space-y-2 space-x-2 md:space-x-0'>
-            <div className='flex items-center justify-evenly space-x-2'>
-            <a className='hover:bg-red-600 border-none rounded-sm' href="" ><FaFacebook size={40}/></a>
-            <a className='hover:bg-red-600 border-none rounded-sm' href="" ><FaInstagram size={40}/></a>
-            </div>
-            <div className='flex items-center justify-evenly space-x-2'>
-            <a className='hover:bg-red-600 border-none rounded-sm' href="" ><FiTwitter size={40}/></a>
-            <a className='hover:bg-red-600 border-none rounded-sm' href="" ><MdOutlineEmail  size={40}/></a>
-            </div>
-            <div className='flex items-center justify-evenly space-x-2'>
-            <a className='hover:bg-red-600 border-none rounded-sm' href="" ><FaThreads  size={40}/></a>
-            <a className='hover:bg-red-600 border-none rounded-sm' href="" ><AiFillTikTok size={40}/></a>
-            </div>
-            </div>
+            <div className='flex md:flex-col items-center justify-evenly space-y-2 space-x-0 md:space-x-0'>
+            <a className='hover:bg-red-600 border-none rounded-sm' href="" ><FaFacebook size={25}/></a>
+            <a className='hover:bg-red-600 border-none rounded-sm' href="" ><FaInstagram size={25}/></a>
+            <a className='hover:bg-red-600 border-none rounded-sm' href="" ><FiTwitter size={25}/></a>
+            <a className='hover:bg-red-600 border-none rounded-sm' href="" ><MdOutlineEmail  size={25}/></a>
+            <a className='hover:bg-red-600 border-none rounded-sm' href="" ><FaThreads  size={25}/></a>
+            </div>   
         </div>
     </div>
     <div className='flex flex-col md:flex-row align-middle justify-center bg-slate-950 w-full text-center py-4'>
