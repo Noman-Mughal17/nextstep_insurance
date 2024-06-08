@@ -23,11 +23,16 @@ function Form() {
         email:"",
         p_number:"",
         m_number:"",
-        agree:""
     })
-const [check_state,setcheck_state]=useState('')
+const [check_state,setcheck_state]=useState({
+    check_box:"",
+    agree:""
+})
    const check_states=(e)=>{
-    setcheck_state(e.target.checked)
+        let name =e.target.name
+        let value =e.target.checked
+        setcheck_state({...check_state,[name]:value})
+        console.log(check_state)
 }
 console.log(check_state)
     const changehandler=(e)=>{
@@ -37,7 +42,7 @@ console.log(check_state)
         console.log(formdata)
     }
     const submitdata=()=>{
-       if(formdata.agree!==true){
+       if(check_state.agree==false){
         alert("Please agree terms and conditions")
        }
        else{
@@ -51,7 +56,7 @@ console.log(check_state)
                 <h1 className='text-4xl font-bold underline mx-auto'>Quotation Form</h1>
                 <div className='flex flex-col'>
                     <label htmlFor="" className='font-bold'>How did you hear about us?</label>
-                    <select type="text" onChange={changehandler} name='info' placeholder='Please Select' className='outline-none border rounded-md hover:border-blue-500 hover:shadow-blue-400 shadow-sm px-3 py-3 w-1/2 outline-1'>
+                    <select type="text" onChange={changehandler} name='info' placeholder='Please Select' className='outline-none border rounded-md hover:border-blue-500 hover:shadow-blue-400 shadow-sm px-3 py-3 w-full md:w-1/2 outline-1'>
                                 <option>Please Select</option>
                                 <option>Walk In</option>
                                 <option>Word of Mouth</option>
@@ -65,10 +70,10 @@ console.log(check_state)
                 <div className='flex flex-col'>
                     <label htmlFor="" className='font-bold'>If by a friend, family or referrer please state their name</label>
                     <div className='flex space-x-3'>
-                        {check_state==true?(
+                        {check_state.check_box===true?(
                         <input type="text" disabled={true} onChange={changehandler} name='reference' className='outline-none border rounded-md  hover:border-blue-500 hover:shadow-blue-400 shadow-sm  px-3 py-3 w-1/2' />):(<input type="text" onChange={changehandler} name='reference' className='outline-none border rounded-md  hover:border-blue-500 hover:shadow-blue-400 shadow-sm px-3 py-3 w-1/2' />)}
                         <div className='flex items-center space-x-2 justify-center'>
-                            <input type="checkbox" name='chek_box'  onChange={check_states} />
+                            <input type="checkbox" name='check_box'  onChange={check_states} />
                             <label htmlFor="">or no Recommendation</label>
                         </div>
                     </div>
@@ -195,11 +200,11 @@ console.log(check_state)
                  </div>
                  <div className='flex items-center space-y-4 justify-center flex-col'>
                  <div className='flex items-center space-x-2 justify-center'>
-                    <input name='agree'  onChange={changehandler} type="radio" />
+                    <input name='agree' onChange={check_states} type="checkbox" />
                     <p className='text-xl'> I Agree</p>
                  </div>
                  <p className='text-xl px-2 text-center'>By clicking submit, you agree your explicit consent for us to use the data provided in accordance with the Data Protection act 1998, this data will be used to provide the cheapest possible quote while being shared with both offline and online markets.</p>
-                 </div>
+                 </div> 
                  <button className='transition ease-in-out duration-300 mx-auto px-4 py-2 sm:px-6 sm:py-3 text-black text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl hover:shadow-gray-600 shadow-lg border rounded-md border-none max-w-fit bg-red-600' type='submit' onClick={submitdata}>Submit Information</button>
             </div>
             </form>
