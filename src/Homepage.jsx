@@ -15,9 +15,9 @@ function Home() {
                 <div className='md:col-span-2 lg:col-span-2 xl:col-span-2 col-span-3'>
                     <div className='flex flex-col align-middle justify-center text-center space-y-4 swiper-slide'>
                         <h1 className='font-bold text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl'>CAR INSURANCE</h1>
-                        <img src="./assets/images/home_1.jpg" alt="" className='w-auto' />
+                        <img src="./assets/images/home_1.jpg" alt="" className='w-full' />
                         <div className='flex justify-center align-middle space-x-4'>
-                            <a href="/carinsurance"><button className='text-white bg-black border border-none rounded-md hover:rounded-xl hover:shadow-slate-700 shadow-lg py-2 px-6 w-fit'>MORE</button></a>
+                            <a href="/carinsurance"><button className='text-white bg-black border border-none rounded-md hover:rounded-xl hover:shadow-slate-700 shadow-lg py-2 px-6 w-full'>MORE</button></a>
                            <a href="/form">
                            <button className='text-white bg-red-600 border border-none rounded-lg hover:rounded-xl hover:shadow-slate-700 shadow-lg py-2 px-6 w-fit'>QUOTE</button>
                            </a>

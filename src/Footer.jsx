@@ -64,10 +64,10 @@ function Footer() {
     </div>
     <div className='flex flex-col md:flex-row align-middle justify-center bg-slate-950 w-full text-center py-4'>
         <div className='mx-auto text-white'>
-            <h1 className='text-xl md:text-2xl'>Copyright © 2024<span className='text-[#ff3333]'> Next Step Insurance</span></h1>
+            <h1 className='text-lg md:text-xl'>Copyright © 2024<span className='text-[#ff3333]'> Next Step Insurance</span></h1>
         </div>
         <div className='mx-auto text-white'>
-            <h1 className='text-xl md:text-2xl '><a href="https://truthmarketings.com/">Powered by <span className='hover:text-[#ff3333]'>Truth Marketings</span></a></h1>
+            <h1 className='text-lg md:text-xl '><a href="https://truthmarketings.com/">Powered by <span className='hover:text-[#007aff] underline text-[#ff3333]'>Truth Marketings</span></a></h1>
         </div>
     </div>
     </>
