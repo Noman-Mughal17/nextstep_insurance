@@ -23,7 +23,7 @@ function App() {
   //   {path:'/Business-insurance',element:<Businessinsurance/>}
   // ])
   return (
-   <div className='bg-white font-serif'>
+   <div className='bg-white font-Myroboto'>
     <Topnav/>
     <Downnav/>
     <BrowserRouter>

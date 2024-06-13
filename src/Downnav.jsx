@@ -45,11 +45,10 @@ const Downnav = () => {
         key={index}
         href={val.path}
           onClick={()=>checkActive(index)}
-          className={`border rounded-sm px-4 lg:px-10 py-2 md:py-5 border-none text-lg ${btnActive === index ? 'bg-[#d2050d] text-white' : 'hover:bg-[#d2050d] hover:text-white'}`}
+          className={`border rounded-sm px-4 py-2 md:py-5 border-none md:text-md lg:text-lg ${btnActive === index ? 'bg-[#d2050d] text-white' : 'hover:bg-[#d2050d] hover:text-white'}`}
           >
           {val.name}
           </a>
-         
 
       ))}
       </div>

@@ -6,7 +6,7 @@ function Motortrade() {
     <>
     <div class='w-fill relative'>
       <img class='absolute inset-0 w-full h-full object-cover' src="./assets/images/motor_trade1.jpg" alt="" />
-      <div class='relative z-10 flex items-center justify-center text-center w-full sm:max-w-96 flex-col px-4 py-5 space-y-4 bg-opacity-80'>
+      <div class='relative z-10 flex items-center justify-center text-center w-full sm:max-w-96 flex-col ps-3 lg:ps-16 py-5 space-y-4 bg-opacity-80'>
         <h1 class='lg:text-white xl:text-white text-black text-xl sm:text-2xl xl:text-3xl font-bold'>MOTOR TRADE</h1>
         <p class='lg:text-white xl:text-white text-black text-md sm:text-lg md:text-xl font-bold'>We go beyond comparison websites to provide you with the best options!</p>        
         <a href='./form'>
